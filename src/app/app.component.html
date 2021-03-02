@@ -32,5 +32,9 @@
     </div>
   </div>
   <p appBasicHighlight>Highlight me please</p>
-  <p appBetterHighlight>Highlight me please</p>
+  <!-- Property binding with square brackets [recommended for clarity sake]-->
+  <!-- defaultColor property is bound to directive name inside directive -->
+  <p [appBetterHighlight]="'palegoldenrod'" [hoverColor]="'hotpink'" >Highlight me please</p>
+  <!-- Property binding without square-- only recommended when binding can't be confused with attributes -->
+  <p appBetterHighlight="tan" hoverColor="lightgrey" >Highlight me please</p>
 </div>

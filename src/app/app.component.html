@@ -69,4 +69,10 @@
   </p>
   <!-- Property binding without square-- only recommended when binding can't be confused with attributes -->
   <p appBetterHighlight="tan" hoverColor="lightgrey">Highlight me please</p>
+  <div [ngSwitch]="value">
+    <p *ngSwitchCase="5">Value is 5</p>
+    <p *ngSwitchCase="10">Value is 10</p>
+    <p *ngSwitchCase="100">Value is 100</p>
+    <p *ngSwitchDefault>Value is default</p>
+  </div>
 </div>
